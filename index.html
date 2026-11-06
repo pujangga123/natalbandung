@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal Bandung 2026 - Pdt. Dr. (H.C.) Stephen Tong</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Montserrat"', 'sans-serif'],
+                    },
+                    colors: {
+                        'earth-dark': '#1a120c',
+                        'earth-base': '#3e2723',
+                        'earth-light': '#5d4037',
+                        'gold-light': '#ffd54f',
+                        'gold-base': '#ffca28',
+                        'gold-dark': '#ffb300',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom noise texture overlay for classic poster feel */
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        
+        .text-shadow-elegant {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-earth-light via-earth-base to-earth-dark min-h-screen text-gray-100 font-sans selection:bg-gold-base selection:text-earth-dark relative">
+
+    <!-- Texture Overlay -->
+    <div class="fixed inset-0 texture-overlay z-0"></div>
+
+    <main class="relative z-10 min-h-screen flex flex-col items-center justify-between p-6 sm:p-10 md:p-16 max-w-7xl mx-auto">
+        
+        <!-- Hero Section: Text + Poster -->
+        <div class="flex flex-col lg:flex-row items-center justify-between w-full gap-12 mt-4 md:mt-8 mb-16">
+            
+            <!-- Left: Text Content -->
+            <div class="w-full lg:w-1/2 flex flex-col space-y-12 text-center lg:text-left">
+                <!-- Top Section: Event Title & Speaker -->
+                <header class="w-full space-y-4 animate-fade-in">
+                    <h2 class="text-lg md:text-2xl font-bold tracking-widest uppercase">
+                        Natal <span class="text-gold-light">Bandung</span> 2026 bersama
+                    </h2>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white uppercase tracking-wider text-shadow-elegant">
+                        Pdt. Dr. (H.C.) Stephen Tong
+                    </h1>
+                </header>
+
+                <!-- Middle Section: Theme / Main Message -->
+                <section class="w-full">
+                    <div class="relative inline-block lg:block">
+                        <!-- Decorative subtle lines -->
+                        <div class="absolute -inset-x-8 top-0 h-px bg-gradient-to-r from-transparent lg:from-gold-dark/40 via-gold-dark/40 to-transparent"></div>
+                        <div class="absolute -inset-x-8 bottom-0 h-px bg-gradient-to-r from-transparent lg:from-gold-dark/40 via-gold-dark/40 to-transparent"></div>
+                        
+                        <h3 class="py-8 text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-shadow-elegant">
+                            <span class="uppercase text-gold-base font-bold block lg:inline">Anak Tunggal</span> 
+                            <span class="font-serif italic font-bold text-gold-light">Allah</span><br>
+                            <span class="text-2xl md:text-4xl italic text-gold-base font-medium">yang</span> 
+                            <span class="uppercase font-bold text-gold-base block lg:inline">Datang Ke Dunia</span>
+                        </h3>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right: Poster Image -->
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                <img src="assets/poster1.jpg" alt="Poster Natal Bandung 2026" class="w-full max-w-md mx-auto lg:mr-0 rounded-lg shadow-xl border border-gold-dark/30" />
+            </div>
+
+        </div>
+
+        <!-- Bottom Section: Details, Location, CTA -->
+        <section class="w-full max-w-5xl space-y-8 bg-earth-dark/50 p-8 md:p-12 rounded-xl backdrop-blur-sm border border-gold-dark/20 shadow-2xl text-center mx-auto">
+            <div class="space-y-2">
+                <p class="text-2xl md:text-4xl font-bold text-white tracking-wide">
+                    SENIN, 14 DES <span class="text-gold-base text-xl md:text-3xl ml-2">PK 18.30 WIB</span>
+                </p>
+                <div class="text-base md:text-xl text-gray-300 font-medium leading-relaxed pt-2">
+                    <p>Sudirman Grand Ballroom</p>
+                    <p>Jln. Jend. Sudirman No. 620</p>
+                </div>
+            </div>
+
+            <!-- Call to action (Interactive element for landing page) -->
+            <div class="pt-6 pb-2">
+                <a href="#" class="inline-block px-8 py-3 bg-gradient-to-r from-gold-dark to-gold-base text-earth-dark font-bold uppercase tracking-wider rounded shadow-lg hover:shadow-gold-base/30 hover:-translate-y-1 transition-all duration-300">
+                    Tambahkan ke Kalender
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer: Contact & Organizer -->
+        <footer class="w-full mt-16 pt-8 border-t border-earth-light/50 flex flex-col items-center space-y-4">
+            <p class="text-xl md:text-2xl font-bold tracking-wider text-white">
+                INFO: <a href="tel:081122211188" class="text-gold-base hover:text-gold-light transition-colors">0811 222 111 88</a>
+            </p>
+            <div class="flex items-center space-x-4 opacity-80">
+                <!-- Placeholder for STEMI Logo (using CSS shapes/text as fallback) -->
+                <div class="w-8 h-8 rounded-full border border-gold-light/50 flex items-center justify-center">
+                    <span class="text-gold-light text-xs font-serif italic">S</span>
+                </div>
+                <p class="text-xs md:text-sm text-gray-400 uppercase tracking-widest max-w-lg">
+                    Stephen Tong Evangelistic Ministries International (STEMI)
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
